@@ -531,31 +531,85 @@ button:hover{
     width: 100%;
 }
 
-/* =======================
-   ✅ MOBILE RESPONSIVENESS
-   ======================= */
-@media (max-width: 768px) {
+/* =========================================
+   📱 SMALL DEVICES (Phones - up to 480px)
+   ========================================= */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    h2 {
+        font-size: 120%;
+    }
+    .main-text {
+        width: 95%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .gif img {
+        width: 100%;
+    }
+    .search-bar input[type="search"],
+    .search-bar button {
+        width: 100%;
+        border-radius: 25px;
+        font-size: 14px;
+    }
+    .search-bar {
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .main-nav {
+        display: none; /* ✅ Hide menu by default on very small screens */
+    }
+    .poster, .art, .iPhone {
+        width: 100%;
+        height: auto;
+    }
+    .forms {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+    .main {
+        width: 95%;
+    }
+    footer {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .footer-nav li,
+    .social-nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    #music-popup {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        flex-direction: row;
+        border-radius: 0;
+        justify-content: start;
+    }
+}
 
+/* =========================================
+   📱 MEDIUM DEVICES (Tablets - up to 768px)
+   ========================================= */
+@media (max-width: 768px) {
     html {
         font-size: 16px;
     }
-
     .row {
         width: 100%;
         padding: 0 15px;
     }
-
     .main-text {
         width: 90%;
-        padding-left: 0;
-        text-align: center;
     }
-
-    .gif img {
-        width: 90%;
-        padding-left: 0;
-    }
-
     .main-nav {
         float: none;
         display: flex;
@@ -563,103 +617,61 @@ button:hover{
         align-items: center;
         padding-top: 10px;
     }
-
     .main-nav li {
         margin: 10px 0;
     }
-
-    .search-bar {
-        float: none;
-        justify-content: center;
-        margin: 10px auto;
-        flex-wrap: wrap;
-    }
-
     .search-bar input[type="search"] {
         width: 100%;
-        border-radius: 25px;
-        margin-bottom: 10px;
     }
-
-    .search-bar button {
+    .poster, .art, .iPhone {
         width: 100%;
-        border-radius: 25px;
     }
-
-    .poster,
-    .art,
-    .iPhone {
-        width: 100%;
-        height: auto;
-    }
-
     .col {
         width: 100% !important;
         margin-bottom: 20px;
     }
-
     .section2 .row,
     .section-1 .row,
     .section-works .row {
         display: block;
     }
-
     .forms {
         margin: 20px auto;
-        padding: 0 20px;
     }
-
-    .main {
-        width: 100%;
-    }
-
     footer {
         padding: 20px;
     }
+}
 
-    .footer-nav,
-    .social-nav {
-        float: none;
-        text-align: center;
-        margin-bottom: 20px;
+/* =========================================
+   💻 LARGE DEVICES (Laptops - up to 1200px)
+   ========================================= */
+@media (max-width: 1200px) {
+    html {
+        font-size: 18px;
     }
-
-    .footer-nav li,
-    .social-nav li {
-        display: block;
-        margin: 5px 0;
+    .row {
+        max-width: 90%;
     }
-
-    #music-popup {
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        flex-direction: row;
-        padding: 10px;
-        border-radius: 0;
-        justify-content: start;
-        align-items: center;
+    .main-text {
+        width: 80%;
     }
-
-    #music-popup img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .popup-info {
-        text-align: left;
-        padding-left: 10px;
-        flex-grow: 1;
-    }
-
-    .popup-info p {
-        font-size: 13px;
-    }
-
-    #popup-audio {
-        width: 100%;
+    .search-bar input[type="search"] {
+        width: 200px;
     }
 }
 
-
+/* =========================================
+   🖥 EXTRA LARGE DEVICES (Big Screens)
+   ========================================= */
+@media (min-width: 1600px) {
+    html {
+        font-size: 22px;
+    }
+    .row {
+        max-width: 1400px;
+    }
+    .main-text {
+        width: 70%;
+    }
+}

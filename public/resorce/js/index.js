@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
               signupButton.style.margin = "0 auto";      // Center it
             }
 
-            signupTitle.textContent = "Create an account";
+            signupTitle.textContent = "Signup";
             signupTitle.style.color = "";
             signupTitle.style.fontSize = "";
           }, 5000); // Show again after 5 seconds
